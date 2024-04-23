@@ -24,7 +24,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        upload_url: ${{ github.event.release.upload_url }}
         asset_path: dist/midi-player.js
         asset_name: midi-player.js
         asset_content_type: application/javascript
@@ -34,7 +33,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        upload_url: ${{ github.event.release.upload_url }}
         asset_path: dist/midi-player.min.js
         asset_name: midi-player.min.js
         asset_content_type: application/javascript
